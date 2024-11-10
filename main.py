@@ -1,6 +1,3 @@
-jun_vic = 0
-jun_fail = 0
-
 import streamlit as st
 
 st.title('준범이를 위한 스타전적 서버')

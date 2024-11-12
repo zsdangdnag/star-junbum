@@ -38,14 +38,14 @@ elif Player2_ == '𝟺𝚊𝚔𝚞𝚖𝚒𝟻':
 
 # f.close()
 
-f = open("./user//{}.txt".format(Player1_), 'r')
+f = open("user//{}.txt".format(Player1_), 'r')
 i = f.readline()
 Player1 =i.split(",")
 f.close() 
 Player1 = [int (i) for i in Player1]
 
 
-f = open("./user//{}.txt".format(Player2_), 'r')
+f = open("user//{}.txt".format(Player2_), 'r')
 i = f.readline()
 Player2 =i.split(",")
 f.close() 
@@ -72,7 +72,7 @@ Player2 = [int (i) for i in Player2]
 
 if Player1_vic:
     Player1[int(Player2[0])]+=1
-    f = open("./user\\{}".format(file1), 'w')
+    f = open("user//{}.txt".format(Player1_), 'w')
     f.write("{},{},{},{}".format(Player1[0],Player1[1],Player1[2],Player1[3]))
     f.close()
     st.write("{} :   victory".format(Player1_))
@@ -80,7 +80,7 @@ if Player1_vic:
 
 if Player2_vic:
     Player2[int(Player1[0])]+=1
-    f = open("./user\\{}".format(file2), 'w')
+    f = open("user//{}.txt".format(Player2_), 'w')
     f.write("{},{},{},{}".format(Player2[0],Player2[1],Player2[2],Player2[3]))
     f.close()   
     st.write("{} :   victory".format(Player2_))

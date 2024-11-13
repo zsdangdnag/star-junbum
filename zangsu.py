@@ -1,7 +1,7 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
-from bokeh.plotting import figure
+# from bokeh.plotting import figure
 
 user=['mars','zangsu','𝟺𝚊𝚔𝚞𝚖𝚒𝟻']
 
@@ -54,8 +54,7 @@ def write(num):
             col2.subheader("-----{}-----".format(user[i[0]-1]), divider="gray")
             col2.write("|  승리수:{} |".format(player[num][i[0]]))
             col2.write("|  패배수:{} |".format(i[num+1]))
-
-    
+            
             victory = [player[num][i[0]]]
             fail = [i[num+1]]
             index = [user[i[0]-1]]

@@ -18,20 +18,20 @@ Player2_vic = col2.button('victory ')
 
 
 
-if Player1_ == 'mars':
-    player1_code = 1
-elif Player1_ == 'zangsu':
-    player1_code = 2
-elif Player1_ == '𝟺𝚊𝚔𝚞𝚖𝚒𝟻':
-    player1_code = 3
+# if Player1_ == 'mars':
+#     player1_code = 1
+# elif Player1_ == 'zangsu':
+#     player1_code = 2
+# elif Player1_ == '𝟺𝚊𝚔𝚞𝚖𝚒𝟻':
+#     player1_code = 3
 
 
-if Player2_ == 'mars':
-    player2_code = 1
-elif Player2_ == 'zangsu':
-    player2_code = 2
-elif Player2_ == '𝟺𝚊𝚔𝚞𝚖𝚒𝟻':
-    player2_code = 3
+# if Player2_ == 'mars':
+#     player2_code = 1
+# elif Player2_ == 'zangsu':
+#     player2_code = 2
+# elif Player2_ == '𝟺𝚊𝚔𝚞𝚖𝚒𝟻':
+#     player2_code = 3
 
 
 # f = open("user//junbum.txt", 'r')

@@ -1,7 +1,7 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
-from bokeh.plotting import figure
+# from bokeh.plotting import figure
 
 user=['mars','zangsu','𝟺𝚊𝚔𝚞𝚖𝚒𝟻']
 

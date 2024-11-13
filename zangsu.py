@@ -66,5 +66,5 @@ def write(num):
 
 
 
-write(0)
+write(1)
 

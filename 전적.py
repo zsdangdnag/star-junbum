@@ -9,12 +9,12 @@ col1, col2 = st.columns(2)
 col1.header("Player1")
 Player1_= col1.selectbox('user1', ['mars','zangsu','𝟺𝚊𝚔𝚞𝚖𝚒𝟻'])
 Player1_vic = col1.button('victory')
-
+Player1_undo = col1.button('undo')
 
 col2.header("Player2")
-
 Player2_=col2.selectbox('user2', ['mars','zangsu','𝟺𝚊𝚔𝚞𝚖𝚒𝟻'])
 Player2_vic = col2.button('victory ') 
+Player2_undo = col2.button('undo ') 
 
 
 
@@ -77,11 +77,23 @@ if Player1_vic:
     f.close()
     st.write("{} :   victory".format(Player1_))
 
+if Player1_undo:
+    Player1[int(Player2[0])]+=1
+    f = open("user//{}.txt".format(Player1_), 'w')
+    f.write("{},{},{},{}".format(Player1[0],Player1[1],Player1[2],Player1[3]))
+    f.close()
+    st.write("{} :   undo".format(Player1_))
 
 if Player2_vic:
-    Player2[int(Player1[0])]+=1
+    Player2[int(Player1[0])]-=1
     f = open("user//{}.txt".format(Player2_), 'w')
     f.write("{},{},{},{}".format(Player2[0],Player2[1],Player2[2],Player2[3]))
     f.close()   
     st.write("{} :   victory".format(Player2_))
 
+if Player2_undo:
+    Player1[int(Player2[0])]-=1
+    f = open("user//{}.txt".format(Player1_), 'w')
+    f.write("{},{},{},{}".format(Player1[0],Player1[1],Player1[2],Player1[3]))
+    f.close()
+    st.write("{} :   undo".format(Player1_))

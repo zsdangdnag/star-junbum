@@ -42,6 +42,7 @@ def write(num):
     
 
     col1.subheader("----총전적----", divider="gray")
+    col1.write("| 총 경기수:{} |".format(Sum+Losesum))
     col1.write("| 총 승리수:{} |".format(Sum))
     col1.write("| 총 패배수:{} |".format(Losesum))
     col1.write("| 승률:{}% |".format(pers(Sum,Sum+Losesum)))
@@ -52,7 +53,6 @@ def write(num):
     for i in player:
         if i[0]  != num+1:
             col2.subheader("----{}----".format(user[i[0]-1]), divider="gray")
-            col1.write("| 총 경기수:{} |".format(Sum+Losesum))
             col2.write("|  승리수:{} |".format(player[num][i[0]]))
             col2.write("|  패배수:{} |".format(i[num+1]))
             

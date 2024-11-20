@@ -42,7 +42,7 @@ def write(num):
     
 
     col1.subheader("----총전적----", divider="gray")
-    col1.write("| 총 경기수:{} |".format(Sum+Losesum))
+    col1.write("| 총 경기수:{} |".format(Sum+Losesum)) 
     col1.write("| 총 승리수:{} |".format(Sum))
     col1.write("| 총 패배수:{} |".format(Losesum))
     col1.write("| 승률:{}% |".format(pers(Sum,Sum+Losesum)))

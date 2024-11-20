@@ -92,8 +92,9 @@ if Player2_vic:
     st.write("{} :   victory".format(Player2_))
 
 if Player2_undo:
-    Player1[int(Player2[0])]-=1
-    f = open("user//{}.txt".format(Player1_), 'w')
-    f.write("{},{},{},{}".format(Player1[0],Player1[1],Player1[2],Player1[3]))
-    f.close()
-    st.write("{} :   undo".format(Player1_))
+    Player2[int(Player1[0])]-=1
+    f = open("user//{}.txt".format(Player2_), 'w')
+    f.write("{},{},{},{}".format(Player2[0],Player2[1],Player2[2],Player2[3]))
+    f.close()   
+    st.write("{} :   victory".format(Player2_))
+
